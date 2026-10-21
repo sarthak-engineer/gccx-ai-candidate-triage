@@ -56,6 +56,27 @@ AI output remains advisory. “Insufficient evidence” means the available prof
 | Algorithm exercise | Python inverted skill index |
 | JavaScript exercise | Node.js and the built-in assertion library |
 
+
+## Architecture
+
+              Recruiter
+                  |
+                  v
+        React + Vite Frontend
+                  |
+             REST API
+                  |
+                  v
+          FastAPI Backend
+           /           \
+          v             v
+    SQLite Database   Groq LLM API
+          |             |
+          v             v
+ Candidates, Tags    AI Fit Summary
+ Shortlists, Cache
+
+
 ## Repository structure
 
 ```text
