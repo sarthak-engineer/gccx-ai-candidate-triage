@@ -54,6 +54,10 @@ AI output remains advisory. “Insufficient evidence” means the available prof
 | **Directory Table & Badges**<br>Interactive directory table with skill badges, experience, recruitment source, and quick action toggles. | ![Candidate Table](screenshots/03_candidate_directory_table.png) |
 | **Candidate Details & Shortlist**<br>Candidate profile sidebar with contact details, recruiter notes, tag creation, and shortlist toggle with feedback banner. | ![Candidate Details & Shortlist](screenshots/04_shortlist_and_details.png) |
 | **AI Candidate Insights**<br>Live Groq LLM fit assessment, concise evaluation summary, and verifiable evidence grounded in candidate notes and skills. | ![AI Candidate Insights](screenshots/05_ai_candidate_insights.png) |
+| **Target Role Filter Dropdown**<br>Dynamic role selector populated from backend metadata covering all available candidate roles. | ![Role Filter Dropdown](screenshots/06_role_filter_dropdown.png) |
+| **Multi-Param Candidate Query**<br>Narrowing candidate pool by specific role (`ML Engineer`), experience range, and required skills (`Node.js`). | ![Multi-Param Query](screenshots/07_skill_and_experience_filtering.png) |
+| **Shortlisted Candidate View**<br>Candidate shortlist state persisted in SQLite with visual star indicator, badge, and real-time shortlist count. | ![Shortlisted Candidate State](screenshots/08_candidate_shortlisted_state.png) |
+| **Evidence Mismatch Detection**<br>Live AI evaluation honestly reporting `insufficient_evidence` when a candidate's notes reveal lack of required ML skills despite target role. | ![Evidence Mismatch Detection](screenshots/09_ai_evaluation_mismatch_evidence.png) |
 
 ## Technology stack
 
@@ -123,7 +127,11 @@ AI output remains advisory. “Insufficient evidence” means the available prof
 │   ├── 02_candidate_filtering.png
 │   ├── 03_candidate_directory_table.png
 │   ├── 04_shortlist_and_details.png
-│   └── 05_ai_candidate_insights.png
+│   ├── 05_ai_candidate_insights.png
+│   ├── 06_role_filter_dropdown.png
+│   ├── 07_skill_and_experience_filtering.png
+│   ├── 08_candidate_shortlisted_state.png
+│   └── 09_ai_evaluation_mismatch_evidence.png
 ├── tests/
 │   ├── test_api.py                # Backend and AI-summary API tests
 │   ├── test_match_candidates.js   # Task 2b JavaScript validation tests
