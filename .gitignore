@@ -1,0 +1,39 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Python
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.log
+
+# Local databases
+*.db
+*.db-journal
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Frontend dependencies and builds
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
