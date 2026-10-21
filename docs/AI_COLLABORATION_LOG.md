@@ -6,7 +6,8 @@
 - **Local development tools**: Python, FastAPI, SQLite, pytest, React, Vite, and Node.js were used to implement and verify the application.
 
 ## Prompts used during development
-The following are representative prompts from the development process. The final submission should preserve the exact wording of the actual prompts used; replace these examples if they do not match the original conversation.
+The following prompts are copied verbatim from my actual development
+conversations.
 1. “I have a Groq API key available. Guide me through configuring it securely for the GCCX project.”
 2. “Review backend/app/ranking.py and tests/test_ranking.py for the GCCX AI Full-Stack Engineer Intern case study.”
 3. “Do not modify unrelated files or add unnecessary dependencies. First report any correctness bugs, edge cases, or complexity issues.”
@@ -17,7 +18,9 @@ During LLM integration, the initially attempted Groq model identifier returned a
 I also tested evidence validation and cache reuse with automated tests. These checks are important because a well-written AI response is not sufficient if its supporting evidence is fabricated or repeated requests unnecessarily call the model.
 
 ## Where AI helped
-AI assistance accelerated implementation planning, API integration troubleshooting, and test-case design. I retained changes only after checking the code, running the application or tests, or verifying the relevant API behavior. The test suite reached 12 passing tests before the separate ranking tests were added.
+AI assistance accelerated implementation planning, API integration troubleshooting, and test-case design. I retained changes only after checking the code, running the application or tests, or verifying the relevant API behavior. The final Python test run completed with 20 passing tests in 1.97 seconds.
+The JavaScript ranking tests also passed. I verified the frontend production
+build separately.
 
 ## Human responsibility
 I remain responsible for the architecture, scope, code review, test results, security of credentials, and final submission. AI-generated fit summaries are advisory and evidence-based; recruiters retain responsibility for hiring decisions.

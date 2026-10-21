@@ -87,11 +87,13 @@ A linear scan (`filter` + `includes` across all candidates) has $\mathcal{O}(N \
 
 With the **Inverted Index**, when a recruiter searches for 4 skills that match 350 candidates, the engine performs 4 dictionary lookups, increments 350 counters, and sorts 350 items ($\sim 3,000$ operations instead of $1,000,000+$).
 
-### Empirical Benchmark (100,000 Candidates)
-Benchmarked on an average laptop using Python 3.12:
-- **Index build time (100k candidates)**: $\approx 0.28$ seconds.
-- **Query execution time (100k candidates, 4 required skills, 60,599 matches)**: $\approx 0.48$ seconds.
-- **Top-tier search (< 2,000 matches)**: $< 15$ milliseconds.
+### Benchmark status
+
+The algorithm's performance should be measured using a reproducible
+benchmark with 100,000 candidate records. Record index construction
+time, query execution time, number of matching candidates, and the
+test environment. No measured performance figures are claimed here
+until that benchmark has been run.
 
 ---
 
