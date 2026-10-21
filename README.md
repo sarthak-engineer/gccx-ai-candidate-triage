@@ -7,6 +7,7 @@ A full-stack candidate triage application built for the **GCCX Global — AI Ful
 ## Contents
 
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Technology stack](#technology-stack)
 - [Repository structure](#repository-structure)
 - [Requirements](#requirements)
@@ -43,6 +44,16 @@ A full-stack candidate triage application built for the **GCCX Global — AI Ful
 - Reports API or validation failures instead of presenting unsupported output as a successful assessment.
 
 AI output remains advisory. “Insufficient evidence” means the available profile does not support a confident conclusion; it does not prove that a candidate lacks the skill.
+
+## Screenshots
+
+| View | Screenshot |
+|---|---|
+| **Candidate Directory Overview**<br>Landing view displaying candidate metric cards, multi-facet filter controls, and directory records. | ![Candidate Directory Overview](screenshots/01_initial_dashboard.png) |
+| **Filtered Search Results**<br>Dynamic filtering across target role, years of experience, and client-required skill sets. | ![Filtered Search](screenshots/02_candidate_filtering.png) |
+| **Directory Table & Badges**<br>Interactive directory table with skill badges, experience, recruitment source, and quick action toggles. | ![Candidate Table](screenshots/03_candidate_directory_table.png) |
+| **Candidate Details & Shortlist**<br>Candidate profile sidebar with contact details, recruiter notes, tag creation, and shortlist toggle with feedback banner. | ![Candidate Details & Shortlist](screenshots/04_shortlist_and_details.png) |
+| **AI Candidate Insights**<br>Live Groq LLM fit assessment, concise evaluation summary, and verifiable evidence grounded in candidate notes and skills. | ![AI Candidate Insights](screenshots/05_ai_candidate_insights.png) |
 
 ## Technology stack
 
@@ -107,6 +118,12 @@ AI output remains advisory. “Insufficient evidence” means the available prof
 │   ├── package.json
 │   ├── tailwind.config.js
 │   └── vite.config.js
+├── screenshots/                   # Application screenshots & UI walk-through
+│   ├── 01_initial_dashboard.png
+│   ├── 02_candidate_filtering.png
+│   ├── 03_candidate_directory_table.png
+│   ├── 04_shortlist_and_details.png
+│   └── 05_ai_candidate_insights.png
 ├── tests/
 │   ├── test_api.py                # Backend and AI-summary API tests
 │   ├── test_match_candidates.js   # Task 2b JavaScript validation tests
